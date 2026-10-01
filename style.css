@@ -1,0 +1,151 @@
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #00bcd4;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    flex: 1;
+    min-width: 250px;
+    background-color: lightblue;
+    padding: 30px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ddd;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive cho Mobile (màn hình nhỏ hơn hoặc bằng 768px) */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none; /* Ẩn menu điều hướng trên mobile theo yêu cầu đề bài */
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .services,
+    .testimonials {
+        padding: 40px 20px;
+    }
+}
